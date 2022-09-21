@@ -16,7 +16,7 @@ void draw()
   fill(66, 50, 50);
   noStroke();
   strokeWeight(2);
-  stroke((int)(Math.random() * 255), (int)(Math.random() * 255), (int)(Math.random() * 255), bolt);
+  stroke((int)(Math.random() * 255), (int)(Math.random() * 255), (int)(Math.random() * 255), 200);
   while (endY < 300) {
     //lightning bolt
     endX = startX + (int)(Math.random() * 19) - 9;
@@ -25,12 +25,12 @@ void draw()
     startX = endX;
     startY = endY;
   }
-    bolt = bolt - 5;
-    while (stars < 200) {
-      stars = 0;
-      stroke((int)(Math.random() * 255), (int)(Math.random() * 255), (int)(Math.random() * 255));
-      ellipse((int)(Math.random() * 300), (int)(Math.random() * 100), 1, 1);
-    }
+    for (int i = 0; i < 100; i++)
+      ellipse((int)(Math.random() * 301), (int)(Math.random() * 110), 0.1, 0.1);
+    ellipse(10, 10, 50, 50);
+    strokeWeight(3);
+    fill(0, 0, 0, 40);
+    rect(-10, -10, 320, 320);
 }
     
     
@@ -39,9 +39,6 @@ void mousePressed()
   startX = mouseX;
   startY = 0;
   endX = 0;
-  endY = 150;
-  draw();
-}
   endY = 150;
   draw();
 }
