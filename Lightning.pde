@@ -24,7 +24,7 @@ void draw()
   }
   }
   lightningWidth = 4;
-  fill(66, 50, 50, 20);
+  fill(66, 50, 50, 10);
   stroke((int)(Math.random() * 255), (int)(Math.random() * 255), (int)(Math.random() * 255), 200);
   while (startY < 295) {
     //lightning bolt
@@ -48,7 +48,7 @@ void draw()
       ellipse((int)(Math.random() * 301), (int)(Math.random() * 261) + 40, 1.5, 1.5);
     
     //fade
-    fill(0, 0, 0, 5);
+    fill(0, 0, 0, 10);
     rect(-10, -10, 320, 320);
 }
     
