@@ -77,31 +77,3 @@ void mousePressed()
   endY = 150;
   redraw();
 }
-      
-    endX = startX + (int)(Math.random() * 25) - 12;
-    endY = startY + (int)(Math.random() * 12);
-    line(startX, startY, endX, endY);
-    startX = endX;
-    startY = endY;
-      }
-      
-    //stars
-    noStroke();
-    fill((int)(Math.random() * 105), (int)(Math.random() * 105), (int)(Math.random() * 255), 170);
-    for (int star = 0; star < 30; star ++)
-      ellipse((int)(Math.random() * 301), (int)(Math.random() * 261) + 40, 1.5, 1.5);
-    
-    //fade
-    fill(0, 0, 0, 10);
-    rect(-10, -10, 320, 320);
-}
-    
-void mousePressed()
-{
-  //draw another lightning bolt
-  startX = mouseX;
-  startY = (int)(Math.random() * 10) + 20;
-  endX = 0;
-  endY = 150;
-  redraw();
-}
